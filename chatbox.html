@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="module" src="chatbox.js"></script>
+    <link rel="stylesheet" href="chatbox.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="header">
+        <table>
+            <tr>
+                <td style="width: 85%;">
+                    <h1>DM App</h1>
+                </td>
+                <td style="text-align: right;">
+                    <h1 id="greeting"></h1>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <dialog data-model>
+        <label for="userName">Enter your username</label><br>
+        <input type="text" id="userName" required minlength="5" maxlength="20"><br>
+
+        <button id="register">Register</button>
+    </dialog>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul id="friends">
+                <!-- <li>The Flight</li>
+                <li>The City</li>
+                <li>The Island</li>
+                <li>The Food</li> -->
+            </ul>
+        </div>
+
+        <div class="col-9">
+            <!-- <h1>The City</h1> -->
+            <p id="messageData">Click on your friend list to see the message here</p>
+            <!-- <p>Resize the browser window to see how the content respond to the resizing.</p> -->
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Compose Message</li>
+            </ul>
+
+            <table>
+                <tr>
+                    <td><label for="to">TO</label></td>
+                    <td><input id="to" type="text" name="to" /></td>
+                </tr>
+
+                <tr>
+                    <td><label for="message">Message</label></td>
+                    <td><input id="message" type="text" name="message" /></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input id="send" type="button" value="Send" onclick="send()" />
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
